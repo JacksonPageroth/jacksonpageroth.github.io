@@ -28,7 +28,7 @@
       font-weight: normal;
     }
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 20px auto;
       padding: 0 20px;
     }
@@ -64,21 +64,23 @@
     /* Flexbox container for photos */
     .photo-container {
       display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 -10px; /* to counteract individual section margins */
     }
     .photo-container section {
-      flex: 1 1 45%;
+      width: 50%;
       box-sizing: border-box;
-      margin: 10px;
+      padding: 0 10px;
     }
     figure {
       margin: 0;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    /* Set both images to the same fixed height and use object-fit to cover */
+    .photo-container img {
+      width: 100%;
+      height: 300px; /* Adjust height as needed */
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
@@ -114,7 +116,7 @@
           </figure>
         </section>
       </div>
-      <!-- Optional duplicate text credits (if desired) -->
+      <!-- Optional duplicate text credits -->
       <p><strong>Juneau Icefield Research Program (2023):</strong> Photo Credit: Jay Ach.</p>
       <p><strong>Student Seaglider Center (2023):</strong> Jackson Page-Roth (back row, second from the right, green fleece).</p>
     </section>
@@ -232,6 +234,7 @@
   </main>
 
   <footer>
+    <p class="small">Page updated | Google Sites | Report abuse</p>
   </footer>
 </body>
 </html>
