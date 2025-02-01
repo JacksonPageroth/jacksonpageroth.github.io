@@ -61,6 +61,25 @@
       font-size: 0.9rem;
       color: #777;
     }
+    /* Flexbox container for photos */
+    .photo-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .photo-container section {
+      flex: 1 1 45%;
+      box-sizing: border-box;
+      margin: 10px;
+    }
+    figure {
+      margin: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -73,27 +92,29 @@
   <main>
     <!-- Photo Credits and Programs -->
     <section id="photos">
-    <!-- Juneau Icefield Research Program Photo -->
-<section id="juneau-photo">
-  <h2>Juneau Icefield Research Program (2023)</h2>
-  <figure>
-    <!-- Replace 'Jay_JIRP23 _DSC1037.jpg' with your actual image URL or path -->
-    <img src="Jay_JIRP23 _DSC1037.jpg" alt="Juneau Icefield Research Program, Photo by Jay Ach" style="max-width:100%; height:auto;">
-    <figcaption>Photo Credit: Jay Ach.</figcaption>
-  </figure>
-</section>
-
-<!-- Student Seaglider Center Photo -->
-<section id="seaglider-photo">
-  <h2>Student Seaglider Center (2023)</h2>
-  <figure>
-    <!-- Replace 'path/to/student-seaglider-photo.jpg' with your actual image URL or path -->
-    <img src="DSCF8052.JPG" alt="Student Seaglider Center, Jackson Page-Roth (back row, second from the right, green fleece)" style="max-width:100%; height:auto;">
-    <figcaption>Jackson Page-Roth (back row, second from the right, green fleece).</figcaption>
-  </figure>
-</section>
-
       <h2>Photo Credits &amp; Programs</h2>
+      <div class="photo-container">
+        <!-- Juneau Icefield Research Program Photo -->
+        <section id="juneau-photo">
+          <h2>Juneau Icefield Research Program (2023)</h2>
+          <figure>
+            <!-- Replace 'Jay_JIRP23 _DSC1037.jpg' with your actual image URL or path -->
+            <img src="Jay_JIRP23 _DSC1037.jpg" alt="Juneau Icefield Research Program, Photo by Jay Ach">
+            <figcaption>Photo Credit: Jay Ach.</figcaption>
+          </figure>
+        </section>
+      
+        <!-- Student Seaglider Center Photo -->
+        <section id="seaglider-photo">
+          <h2>Student Seaglider Center (2023)</h2>
+          <figure>
+            <!-- Replace 'DSCF8052.JPG' with your actual image URL or path -->
+            <img src="DSCF8052.JPG" alt="Student Seaglider Center, Jackson Page-Roth (back row, second from the right, green fleece)">
+            <figcaption>Jackson Page-Roth (back row, second from the right, green fleece).</figcaption>
+          </figure>
+        </section>
+      </div>
+      <!-- Optional duplicate text credits (if desired) -->
       <p><strong>Juneau Icefield Research Program (2023):</strong> Photo Credit: Jay Ach.</p>
       <p><strong>Student Seaglider Center (2023):</strong> Jackson Page-Roth (back row, second from the right, green fleece).</p>
     </section>
