@@ -99,23 +99,24 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
-
-    /* Lightbox Styles */
+    /* Lightbox styling */
     .lightbox {
-      display: none;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.8); /* Dark background for Lightbox */
+      display: none;
       justify-content: center;
       align-items: center;
+      z-index: 1000;
     }
 
     .lightbox-content {
-      max-width: 90%;
-      max-height: 90%;
+      max-width: 90%; /* Make sure the full image fits inside the viewport */
+      max-height: 90%; /* Prevent it from exceeding the screen height */
+      object-fit: contain; /* Ensures the full image is shown without cropping */
     }
   </style>
 </head>
@@ -287,19 +288,17 @@
       </ul>
     </section>
 
-    <!-- Pictures -->
-    <section id="photo-gallery">
-      <h2>Photo Gallery</h2>
+    <!-- Photos -->
+    <section id="photos">
+      <h2>Photos</h2>
       <div class="gallery" id="gallery-container"></div>
     </section>
-    
+
     <!-- Lightbox Container -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
       <img id="lightbox-img" class="lightbox-content">
     </div>
-    
-    <script src="gallery.js"></script>
-    
+
     <script src="gallery.js"></script> <!-- Link to external JS file -->
   </main>
   <footer>
