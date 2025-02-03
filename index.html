@@ -61,6 +61,24 @@
       font-size: 0.9rem;
       color: #777;
     }
+    /* Flex container for the two photos */
+    .photo-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .photo-container section {
+      flex: 1;
+      min-width: 300px;
+      margin: 10px;
+      text-align: center;
+    }
+    .photo-container img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -68,30 +86,29 @@
     <h1>Cryosphere Microbiology</h1>
     <h2>Jackson Page-Roth</h2>
     <p>University of Washington, Seattle, WA</p>
-    background-image: url(header.jpg);
   </header>
 
   <main>
-    <!-- Photo Credits and Programs -->
-    <section id="photos">
-    <!-- Juneau Icefield Research Program Photo -->
-<section id="juneau-photo">
-  <h2>Juneau Icefield Research Program (2023)</h2>
-  <figure>
-    <!-- Replace 'Jay_JIRP23 _DSC1037.jpg' with your actual image URL or path -->
-    <img src="Jay_JIRP23 _DSC1037.jpg" alt="Juneau Icefield Research Program, Photo by Jay Ach" style="max-width:50%; height:auto;">
-    <figcaption>Photo Credit: Jay Ach.</figcaption>
-  </figure>
-</section>
+    <!-- Photo Section: Two photos side by side -->
+    <div class="photo-container">
+      <!-- Juneau Icefield Research Program Photo -->
+      <section id="juneau-photo">
+        <h2>Juneau Icefield Research Program (2023)</h2>
+        <figure>
+          <img src="Jay_JIRP23 _DSC1037.jpg" alt="Juneau Icefield Research Program, Photo by Jay Ach">
+          <figcaption>Photo Credit: Jay Ach.</figcaption>
+        </figure>
+      </section>
 
-<!-- Student Seaglider Center Photo -->
-<section id="seaglider-photo">
-  <h2>Student Seaglider Center (2023)</h2>
-  <figure>
-    <!-- Replace 'path/to/student-seaglider-photo.jpg' with your actual image URL or path -->
-    <img src="DSCF8052.JPG" alt="Student Seaglider Center, Jackson Page-Roth (back row, second from the right, green fleece)" style="max-width:50%; height:auto;">
-    <figcaption>Jackson Page-Roth (back row, second from the right, green fleece).</figcaption>
-  </figure>
+      <!-- Student Seaglider Center Photo -->
+      <section id="seaglider-photo">
+        <h2>Student Seaglider Center (2023)</h2>
+        <figure>
+          <img src="DSCF8052.JPG" alt="Student Seaglider Center, Jackson Page-Roth (back row, second from the right, green fleece)">
+          <figcaption>Jackson Page-Roth (back row, second from the right, green fleece).</figcaption>
+        </figure>
+      </section>
+    </div>
 
     <!-- Profile Information -->
     <section id="profile">
