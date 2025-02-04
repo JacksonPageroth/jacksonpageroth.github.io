@@ -1,40 +1,42 @@
 document.addEventListener("DOMContentLoaded", async function () {
-  const imageFolder = "images/gallery/";
+  const imageFolder = "images/gallery/optimized/"; // Adjust this if needed
   const galleryContainer = document.getElementById("gallery-container");
   
   try {
-    // Fetch the JSON file
-    const response = await fetch(imageFolder + "gallery.json"); // Ensure your file is named gallery.json, not gallery.js
+    // Fetch the JSON file listing your optimized images
+    const response = await fetch(imageFolder + "gallery.json");
     const data = await response.json();
-  
-    // Loop through image list and create image elements
+
     data.images.forEach(filename => {
-      let img = document.createElement("img");
-      img.src = `${imageFolder}${filename}`; // Thumbnail or default image
+      // Create the square gallery item container
+      const item = document.createElement("div");
+      item.classList.add("gallery-item");
+      
+      // Create the image element
+      const img = document.createElement("img");
+      img.src = `${imageFolder}${filename}`;
       img.alt = `Gallery image: ${filename}`;
-      img.loading = "lazy"; // Lazy loading for performance
-      img.classList.add("gallery-img");
-  
-      // Open lightbox on click with the full-size image URL
-      img.addEventListener("click", () => openLightbox(`${imageFolder}${filename}`));
-  
-      galleryContainer.appendChild(img);
+      img.loading = "lazy";
+
+      // Open lightbox on click
+      item.addEventListener("click", () => openLightbox(`${imageFolder}${filename}`));
+
+      item.appendChild(img);
+      galleryContainer.appendChild(item);
     });
   } catch (error) {
     console.error("Error loading gallery images:", error);
   }
 });
 
-// Lightbox functions
-function openLightbox(imageSrc) {
+function openLightbox(src) {
   const lightbox = document.getElementById("lightbox");
-  const lightboxImage = document.getElementById("lightbox-img");
-
-  // Set the full-size image in the lightbox
-  lightboxImage.src = imageSrc; 
-  lightbox.style.display = "flex"; // Display the lightbox
+  const lightboxImg = document.getElementById("lightbox-img");
+  lightboxImg.src = src;
+  lightbox.style.display = "flex";
 }
 
 function closeLightbox() {
-  document.getElementById("lightbox").style.display = "none"; // Close the lightbox
+  const lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none";
 }

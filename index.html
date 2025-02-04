@@ -4,90 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cryosphere Microbiology | Jackson Page-Roth</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #ffffff;
-      color: #333333;
-    }
-    header {
-      background: url('images/header.jpg') no-repeat center center;
-      background-size: cover;
-      padding: 30px;
-      text-align: center;
-      color: white;
-    }
-    header h1, header h2, header p {
-      margin: 0;
-      color: white;
-    }
-    header h1 {
-      font-size: 2rem;
-    }
-    header h2 {
-      margin: 5px 0 0;
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-    p, li {
-      margin: 10px 0;
-    }
-    a {
-      color: #4285f4;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .small {
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .photo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-      margin-bottom: 20px;
-    }
-    .photo-container img {
-      height: 350px;
-      object-fit: contain;
-    }
-    footer {
-      background-color: #f4f4f4;
-      padding: 10px 20px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
+  <!-- Sticky Header / Navigation -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="poetry.html">Poetry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Optionally include a header section with an image -->
+  <header class="main-header">
     <h1>Cryosphere Microbiology</h1>
-    <h2>Jackson Page-Roth</h2>
+    <p><strong>Jackson Page-Roth</strong><p>
     <p>University of Washington, Seattle, WA</p>
   </header>
 
@@ -111,7 +45,7 @@
       </section>
     </div>
 
-    <!-- Profile Information -->
+    <!-- Profile Section -->
     <section id="profile">
       <h2>Profile</h2>
       <p><strong>Name:</strong> Jackson Page-Roth</p>
@@ -125,131 +59,99 @@
           https://www.ocean.washington.edu/story/Jody_Deming_Ecosystem
         </a>
       </p>
+      <p><strong>Socials:</strong>
+      <a href="https://www.instagram.com/jacksonpageroth/" target="_blank" rel="noopener noreferrer">Instagram, </a> 
+      <a href="https://www.linkedin.com/in/jacksonpageroth/" target="_blank" rel="noopener noreferrer">LinkedIn, </a>
+      <a href="https://orcid.org/0009-0007-5792-8837" target="_blank" rel="noopener noreferrer">ORCID, </a>
+      <a href="https://www.youtube.com/channel/UCRrBhBOohslb7jGvLcRSnjQ" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </p>
     </section>
-
     <!-- Affiliated Groups -->
     <section id="affiliations">
       <h2>Affiliated Groups</h2>
-      <ul>
-        <li>
-          <strong>August 2025 - :</strong>
-          <a href="https://micro.utk.edu/faculty/jill-mikucki/" target="_blank" rel="noopener noreferrer">UTK Mikucki Lab PhD student</a>
-        </li>
-        <li>
-          <strong>March 2023 - March 2025:</strong>
-          <a href="https://www.ocean.washington.edu/story/Jody_Deming_Ecosystem" target="_blank" rel="noopener noreferrer">UW Deming Lab undergraduate researcher & lab technician</a>
-        </li>
-        <li>
-          <strong>December 2022 - July 2024:</strong>
-          <a href="https://www.ocean.washington.edu/story/Student_Seaglider_Center" target="_blank" rel="noopener noreferrer">UW Student Seaglider Center science lead</a>
-        </li>
-        <li>
-          <strong>May 2022 - September 2022:</strong>
-          <a href="https://www.pmel.noaa.gov/eoi/chemocean.html" target="_blank" rel="noopener noreferrer">
-            NOAA, PMEL, Hydrothermal Venting Research Group intern
-          </a>
-      </ul>
+      <p><strong>August 2025 - :</strong>
+      <a href="https://micro.utk.edu/faculty/jill-mikucki/" target="_blank" rel="noopener noreferrer">UTK Mikucki Lab PhD student</a></p>
+      <p><strong>March 2023 - March 2025:</strong>
+      <a href="https://www.ocean.washington.edu/story/Jody_Deming_Ecosystem" target="_blank" rel="noopener noreferrer">UW Deming Lab undergraduate researcher & lab technician</a></p>
+      <p><strong>December 2022 - July 2024:</strong>
+      <a href="https://www.ocean.washington.edu/story/Student_Seaglider_Center" target="_blank" rel="noopener noreferrer">UW Student Seaglider Center science lead</a></p>
+      <p><strong>May 2022 - September 2022:</strong>
+      <a href="https://www.pmel.noaa.gov/eoi/chemocean.html" target="_blank" rel="noopener noreferrer">
+      NOAA, PMEL, Hydrothermal Venting Research Group intern
+      </a></p>
     </section>
 
     <!-- Fieldwork -->
     <section id="fieldwork">
       <h2>Fieldwork <em>(*** = upcoming)</em></h2>
-      <ul>
-        <li>
-          <strong>***2025 June:</strong>
-          Juneau Icefield, Alaska/British Columbia, (<a href="https://www.jpl.nasa.gov/images/pia26345-nasa-jpls-orcaa-field-work-in-alaska/" target="_blank" rel="noopener noreferrer">ORCAA, NASA Jet Propulsion Laboratory, </a>
-             University of Tennessee) – hot water drilling, semi-continuous particle counts, microbial analysis.
-        </li>
-        <li>
-          <strong>2025 January-February:</strong>
-          Lake Akan/Saroma-ko Lagoon, Hokkaido, Japan, (Morse Scholar Program) – freshwater frost flower collection, sea ice collection methods with Dr. Daiki Nomura
-        </li>
-        <li>
-          <strong>2023/24 December-January:</strong>
-          Pago Pago, American Samoa (UW Oceanography undergraduate senior thesis) - shipboard continuous incubation experiments, bacterial analysis, 16S rRNA gene sequencing
-        </li>
-        <li>
-          <strong>2022, 2023, 2024 year-round:</strong>
-          Salish Sea, Washington, (UW Oceanography, UW Student Seaglider Center, Washington Ocean Acidification Center) – multiple cruises, Seaglider deployment, eDNA sampling, methane seep analysis, bacterial analysis
-        </li>
-        <li>
-          <strong>2023 June-August:</strong>
-          Juneau Icefield, Alaska/British Columbia, (Juneau Icefield Research Program) – GPS, GIS, mass balance, ApRES
-        </li>
-        <li>
-          <strong>2022 July:</strong>
-          Axial Seamount, Pacific Ocean, (National Oceanic and Atmospheric Administration) – sulfide vent fluid analysis
-        </li>
-        <li>
-          <strong>2022 March-June:</strong>
-          Friday Harbor Labs, Washington, (Friday Harbor Laboratories Spring Marine Studies)
-        </li>
-        <li>
-          <strong>2020 September:</strong>
-          Grand Canyon, Arizona, (personal) – whitewater rafting
-        </li>
-        <li>
-          <strong>2019 May:</strong>
-          Yunguilla, Ecuador, (Golden High School) – homestay, community service
-        </li>
-        <li>
-          <strong>2018, 2019 July:</strong>
-          Flat Top Mountain Range, Colorado, (American Mountaineering Center) – backpacking
-        </li>
-        <li>
-          <strong>2017-2022:</strong>
-          Loveland Ski Area, Colorado, (Loveland Ski Patrol)
-        </li>
-      </ul>
+      <p><strong>***2025 June:</strong>
+      Juneau Icefield, Alaska/British Columbia, (<a href="https://www.jpl.nasa.gov/images/pia26345-nasa-jpls-orcaa-field-work-in-alaska/" target="_blank" rel="noopener noreferrer">ORCAA, NASA Jet Propulsion Laboratory, </a>
+       University of Tennessee) – hot water drilling, semi-continuous particle counts, microbial analysis.</p>
+      <p><strong>2025 January-February:</strong>
+      Lake Akan/Saroma-ko Lagoon, Hokkaido, Japan, (Morse Scholar Program) – freshwater frost flower collection, sea ice collection methods with Dr. Daiki Nomura</p>
+      <p><strong>2023/24 December-January:</strong>
+      Pago Pago, American Samoa (UW Oceanography undergraduate senior thesis) - shipboard continuous incubation experiments, bacterial analysis, 16S rRNA gene sequencing</p>
+      <p><strong>2022, 2023, 2024 year-round:</strong>
+      Salish Sea, Washington, (UW Oceanography, UW Student Seaglider Center, Washington Ocean Acidification Center) – multiple cruises, Seaglider deployment, eDNA sampling, methane seep analysis, bacterial analysis</p>
+      <p><strong>2023 June-August:</strong>
+      Juneau Icefield, Alaska/British Columbia, (Juneau Icefield Research Program) – GPS, GIS, mass balance, ApRES</p>
+      <p><strong>2022 July:</strong>
+      Axial Seamount, Pacific Ocean, (National Oceanic and Atmospheric Administration) – sulfide analysis of hydrothermal vent fluids</p>
+      <p><strong>2022 March-June:</strong>
+      Friday Harbor Labs, Washington, (Friday Harbor Laboratories Spring Marine Studies)</p>
+      <p><strong>2020 September:</strong>
+      Grand Canyon, Arizona, (personal) – whitewater rafting</p>
+      <p><strong>2019 May:</strong>
+      Yunguilla, Ecuador, (Golden High School) – homestay, community service</p>
+      <p><strong>2018, 2019 July:</strong>
+      Flat Top Mountain Range, Colorado, (American Mountaineering Center) – backpacking</p>
+      <p><strong>2017-2022:</strong>
+      Loveland Ski Area, Colorado, (Loveland Ski Patrol)</p>
     </section>
 
     <!-- Education -->
     <section id="education">
       <h2>Education</h2>
-      <ul>
-        <li><strong>***2025-:</strong> PhD Department of Microbiology, University of Tennessee, Knoxville, Tennessee, USA</li>
-        <li><strong>2020-2024:</strong> B.S. School of Oceanography, University of Washington, Seattle, Washington, USA</li>
-        <li><strong>2016-2020:</strong> Golden High School, Golden, Colorado, USA</li>
-      </ul>
+      <p><strong>***2025-:</strong> PhD Department of Microbiology, University of Tennessee, Knoxville, Tennessee, USA</p>
+      <p><strong>2020-2024:</strong> B.S. School of Oceanography, University of Washington, Seattle, Washington, USA</p>
+      <p><strong>2016-2020:</strong> Golden High School, Golden, Colorado, USA</p>
     </section>
 
     <!-- Fellowships & Awards -->
     <section id="awards">
       <h2>Fellowships &amp; Awards</h2>
-      <ul>
-        <li><strong>2025-29:</strong> UTK Microbiology Recruitment Fund, $8,000</li>
-        <li><strong>2025-26:</strong> UTK Seaton Graduate School Fellowship, $5,000</li>
-        <li><strong>2023:</strong> UW School of Oceanography Johnson-Porath Scholarship, $2,000</li>
-        <li><strong>2023:</strong> UW Leo Maddox Foundation Term Scholarship in Oceanography, $5,000</li>
-        <li><strong>2020-24:</strong> UW Purple and Gold Scholarship, $16,800</li>
-        <li><strong>2020:</strong> National Ski Patrol Rocky Mountain Division Scholarship, $1,000</li>
-      </ul>
+      <p><strong>2025-29:</strong> UTK Microbiology Recruitment Fund, $8,000</p>
+      <p><strong>2025-26:</strong> UTK Seaton Graduate School Fellowship, $5,000</p>
+      <p><strong>2023:</strong> UW School of Oceanography Johnson-Porath Scholarship, $2,000</p>
+      <p><strong>2023:</strong> UW Leo Maddox Foundation Term Scholarship in Oceanography, $5,000</p>
+      <p><strong>2020-24:</strong> UW Purple and Gold Scholarship, $16,800</p>
+      <p><strong>2020:</strong> National Ski Patrol Rocky Mountain Division Scholarship, $1,000</p>
     </section>
 
     <!-- Publications -->
     <section id="publications-conferences">
       <h2>Publications &amp; Conferences</h2>
-      <ul>
-        <li>
-          Page-Roth, J. (2024). Pioreactors at Sea: Assessing Microbial Community Response to Added Dissolved Inorganic Nutrients [Senior Thesis]. <a href="http://hdl.handle.net/1773/51553" target="_blank" rel="noopener noreferrer">http://hdl.handle.net/1773/51553</a>
-        </li>
-        <li>
-          Page-Roth, J., Boyle, C., & Riverman, K. L. (2023, December 11). Long-term mass loss from the accumulation zone of the Llewellyn Glacier, SE Alaska [Poster Presentation]. AGU23. <a href="https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1435891" target="_blank" rel="noopener noreferrer">https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1435891</a>
-        </li>
-      </ul>
+      <p>
+      Page-Roth, J. (2024). Pioreactors at Sea: Assessing Microbial Community Response to Added Dissolved Inorganic Nutrients [Senior Thesis]. <a href="http://hdl.handle.net/1773/51553" target="_blank" rel="noopener noreferrer">http://hdl.handle.net/1773/51553</a>
+      </p>
+      <p>
+      Page-Roth, J., Boyle, C., & Riverman, K. L. (2023, December 11). Long-term mass loss from the accumulation zone of the Llewellyn Glacier, SE Alaska [Poster Presentation]. AGU23. <a href="https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1435891" target="_blank" rel="noopener noreferrer">https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1435891</a>
+      </p>
+    </section>
 
     <!-- Media -->
     <section id="media">
       <h2>Media</h2>
-      <ul>
-        <li>
-          <a href="https://www.youtube.com/watch?v=jZlUtmWB3o8" target="_blank">UW Student Scientists Shine on Elliott Bay – Big Ten Network Feature</a></li>
-        <li>
-          <a href="https://www.ocean.washington.edu/story/20232024_Senior_Thesis_Blog" target="_blank">UW Oceanography 2023/24 Senior Thesis Blog</a>
-        <li>
-      </ul>
+      <p>
+      <a href="https://www.youtube.com/watch?v=jZlUtmWB3o8" target="_blank">UW Student Scientists Shine on Elliott Bay – Big Ten Network Feature</a>
+      </p>
+      <p>
+      <a href="https://www.ocean.washington.edu/story/20232024_Senior_Thesis_Blog" target="_blank">UW Oceanography 2023/24 Senior Thesis Blog</a>
+      </p>
     </section>
-  </main>
+  <!-- Back-to-Top Button -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
   <footer>
     <div>
       <a href="https://www.instagram.com/jacksonpageroth/" target="_blank" rel="noopener noreferrer">Instagram</a> |
@@ -257,7 +159,9 @@
       <a href="https://orcid.org/0009-0007-5792-8837" target="_blank" rel="noopener noreferrer">ORCID</a> |
       <a href="https://www.youtube.com/channel/UCRrBhBOohslb7jGvLcRSnjQ" target="_blank" rel="noopener noreferrer">YouTube</a>
     </div>
-    <p class="small">Last updated: Feburary 2025</p>
+    <p class="small">Last updated: February 2025</p>
   </footer>
+
+  <script src="back-to-top.js"></script>
 </body>
 </html>
