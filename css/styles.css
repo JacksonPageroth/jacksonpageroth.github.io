@@ -86,12 +86,11 @@ p, li {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
   margin-bottom: 20px;
 }
 
 .photo-container img {
-  max-height: 500px;
+  max-height: 80vh;
   object-fit: contain;
 }
 
