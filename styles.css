@@ -1,173 +1,177 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    background-color: #ffffff;
-    color: #333333;
-    font-size: 15px;
-  }
-  
-  /* Sticky Header & Navigation */
-  .site-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: #333;
-    z-index: 1000;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar li {
-    margin: 0 15px;
-  }
-  
-  .navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-  
-  .navbar a:hover,
-  .navbar a:focus {
-    text-decoration: underline;
-  }
-  
-  /* Header Image Section (if needed) */
-  header.main-header {
-    background: url('images/header.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px;
-    text-align: center;
-    color: white;
-  }
-  
-  header.main-header h1, 
-  header.main-header h2, 
-  header.main-header p {
-    margin: 0;
-  }
-  
-  /* Main Content */
-  main {
-    margin: 50px 150px;
-    padding: 0;
-  }
-  
-  section {
-    margin-bottom: 15px;
-  }
-  
-  h2 {
-    color: #444;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 20px;
+}
 
-  p, li {
-    margin: 10px 0;
-  }
+/* Sticky Header & Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #333;
+  z-index: 1000;
+}
 
-  .photo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-bottom: 20px;
-  }
-  .photo-container img {
-    height: 500px;
-    object-fit: contain;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #f4f4f4;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  footer .small {
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
-  /* Gallery Grid Styles */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-  }
-  
-  /* Square Thumbnail Wrapper */
-  .gallery-item {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%; /* Creates a square container */
-    overflow: hidden;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .gallery-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .gallery-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Lightbox Styles */
-  .lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .lightbox-content {
-    max-width: 90%;
-    max-height: 90%;
-  }
-  
-  /* Back-to-Top Button */
-  #back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: none;
-    background: #4285f4;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  
-  #back-to-top:hover,
-  #back-to-top:focus {
-    background: #3065c7;
-  }
-  
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  text-decoration: underline;
+}
+
+/* Header Image Section (if needed) */
+header.main-header {
+  background: url('images/header.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+header.main-header h1, 
+header.main-header h2, 
+header.main-header p {
+  margin: 0;
+}
+
+/* Main Content */
+main {
+  margin: 50px 150px;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+p, li {
+  margin: 10px 0;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.photo-container img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+}
+}
+
+footer .small {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* Gallery Grid Styles */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+/* Square Thumbnail Wrapper */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Creates a square container */
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+  background: #3065c7;
+}
