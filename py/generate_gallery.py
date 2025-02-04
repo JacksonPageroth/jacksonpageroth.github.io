@@ -33,7 +33,7 @@ for filename in image_files:
 
 # Create a JSON file listing the optimized images (paths relative to the optimized folder)
 gallery_data = {"images": optimized_images}
-json_output_file = os.path.join(optimized_folder, "gallery.json")
+json_output_file = ("gallery.json")
 with open(json_output_file, "w") as f:
     json.dump(gallery_data, f, indent=2)
 

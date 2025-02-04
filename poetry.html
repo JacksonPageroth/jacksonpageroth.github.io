@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Poetry | Jackson Page-Roth</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
 </head>
 <body>
   <!-- Sticky Header / Navigation -->
@@ -21,14 +23,9 @@
   <main>
     <section id="poetry">
       <h2>Poetry</h2>
-      <article>
-        <h3>Title of Poem</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu.
-          Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem.
-        </p>
-        <!-- Add more poems or content as desired -->
-      </article>
+      <div id="poetry-content">
+        <!-- Poetry content will be loaded here -->
+      </div>
     </section>
   </main>
 
@@ -45,6 +42,7 @@
     <p class="small">Last updated: February 2025</p>
   </footer>
 
-  <script src="back-to-top.js"></script>
+  <script src="js/back_to_top.js"></script>
+  <script src="js/load_poetry.js"></script>
 </body>
 </html>

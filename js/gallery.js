@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
   try {
     // Fetch the JSON file listing your optimized images
-    const response = await fetch(imageFolder + "gallery.json");
+    const response = await fetch("data/gallery.json");
     const data = await response.json();
 
     data.images.forEach(filename => {

@@ -43,7 +43,7 @@ body {
 
 /* Header Image Section (if needed) */
 header.main-header {
-  background: url('images/header.jpg') no-repeat center center;
+  background: url('../images/header.jpg') no-repeat center center;
   background-size: cover;
   padding: 80px;
   text-align: center;
@@ -94,7 +94,6 @@ footer {
   background-color: #f4f4f4;
   padding: 10px 20px;
   text-align: center;
-  width: 100%;
   background-size: cover;
 }
 }
