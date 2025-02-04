@@ -1,6 +1,6 @@
 import os
 import json
-from PIL import Image
+from PIL import Image, ImageOps
 
 # Set folders
 source_folder = "images/gallery"
@@ -17,6 +17,9 @@ for filename in image_files:
     source_path = os.path.join(source_folder, filename)
     try:
         with Image.open(source_path) as im:
+            # Correct the orientation of the image
+            im = ImageOps.exif_transpose(im)
+            
             # Convert the image to RGB mode if necessary (WebP works best with RGB)
             if im.mode in ("RGBA", "P"):
                 im = im.convert("RGB")

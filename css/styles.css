@@ -113,7 +113,6 @@ footer .small {
 .gallery-item {
   position: relative;
   width: 100%;
-  padding-bottom: 100%; /* Creates a square container */
   padding-bottom: 100%; /* Sets padding-bottom to 100% to maintain the aspect ratio and create a square container */
   border-radius: 5px;
   cursor: pointer;
@@ -147,11 +146,11 @@ footer .small {
   z-index: 1000;
 }
 
+lightbox-content {
 .lightbox-content {
   max-width: 90%;
   max-height: 90%;
 }
-
 .poem {
   margin-bottom: 30px;
 }
