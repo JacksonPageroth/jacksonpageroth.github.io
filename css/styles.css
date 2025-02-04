@@ -154,6 +154,14 @@ footer .small {
   max-height: 90%;
 }
 
+.poem {
+  margin-bottom: 30px;
+}
+
+.poem h3 {
+  margin-bottom: 10px;
+}
+
 /* Back-to-Top Button */
 #back-to-top {
   position: fixed;

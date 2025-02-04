@@ -7,7 +7,7 @@ poetry_files = [f for f in os.listdir(poetry_folder) if f.lower().endswith((".pd
 
 # Create a JSON file listing the poetry files
 poetry_data = {"poems": poetry_files}
-json_output_file = os.path.join(poetry_folder, "../poetry.json")
+json_output_file = ("data/poetry.json")
 with open(json_output_file, "w") as f:
     json.dump(poetry_data, f, indent=2)
 
